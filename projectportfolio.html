@@ -1,144 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Portfolio Project</title>
-</head>
-<body>
-  
-  <section id="header">
-    <div class="header container">
-      <div class="nav-bar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio Project</title>
+  </head>
+  <body>
+    <section id="header">
+      <div class="header container">
+        <div class="nav-bar">
+          <div class="brand">
+            <a href="#hero">
+              <h1><span>L</span>arry <span>W</span>right</h1>
+            </a>
+          </div>
+          <div class="nav-list">
+            <div class="hamburger">
+              <div class="bar"></div>
+            </div>
+            <ul>
+              <li><a href="#hero" data-after="Home">Home</a></li>
+              <li><a href="#resume" data-after="Resume">Resume</a></li>
+              <li><a href="#projects" data-after="Projects">Projects</a></li>
+              <li><a href="#about" data-after="About">About</a></li>
+              <li><a href="#contact" data-after="Contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="hero">
+      <div class="hero container">
+        <div>
+          <h1>Welcome, <span></span></h1>
+          <h1>My Name is <span></span></h1>
+          <h1>Larry Wright <span></span></h1>
+          <a href="#projects" class="cta">Portfolio</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="resume">
+      <div class="resume container">
+        <div class="resume-top">
+          <h1 class="section-title">Res<span>u</span>me</h1>
+          <p>Resume area that includes pdf resume and work experience</p>
+        </div>
+        <div class="resume-bottom">
+          <div class="resume-item">
+            <div class="icon">
+              <img
+                src="data:image/png;base64,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"
+              />
+            </div>
+            <h2>Developer Resume</h2>
+            <p>Contains embedded pdf of Resume.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="projects container">
+        <div class="projects-header">
+          <h1 class="section-title">Recent <span>Projects</span></h1>
+        </div>
+        <div class="all-projects">
+          <div class="project-item">
+            <div class="project-info">
+              <h1>Memory Game</h1>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad,
+                iusto cupiditate voluptatum impedit unde rem ipsa distinctio
+                illum quae mollitia ut, accusantium eius odio ducimus illo neque
+                atque libero non sunt harum? Ipsum repellat animi, fugit
+                architecto voluptatum odit et!
+              </p>
+            </div>
+            <div class="project-img">
+              <a
+                href="https://wrijlarr.github.io/VR21/memory-game/index.html"
+                target="_blank"
+              >
+                <img src="./images/memorygm.png" alt="img"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="about container">
+        <div class="col-left">
+          <div class="about-img">
+            <img src="./images/meimg.png" alt="img" />
+          </div>
+        </div>
+        <div class="col-right">
+          <h1 class="section-title">About <span>me</span></h1>
+          <h2>Software Developer Apprentice</h2>
+          <p>
+            My journey in software development begin with a fullstack bootcamp
+            at PDX Code Guild. The camp consisted of languages: Javascript,
+            Python, CSS, and html. The libraries and frameworks consited of:
+            django, CSS libraries(bootstrap), and tools used were visual studio
+            and github.
+          </p>
+          <a href="#" class="cta">Download Resume</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="contact container">
+        <div>
+          <h1 class="section-title">Contact <span>info</span></h1>
+        </div>
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="icon">
+              <img src="https://img.icons8.com/bubbles/100/000000/phone.png" />
+            </div>
+            <div class="contact-info">
+              <h1>Phone</h1>
+              <h2>+1 318 218 2362</h2>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="icon">
+              <img
+                src="https://img.icons8.com/bubbles/100/000000/new-post.png"
+              />
+            </div>
+            <div class="contact-info">
+              <h1>Email</h1>
+              <h2>Personal: ldb2g3@me.com</h2>
+              <h2>Work: wrijlarr@amazon.com</h2>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="icon">
+              <img
+                src="https://img.icons8.com/bubbles/100/000000/map-marker.png"
+              />
+            </div>
+            <div class="contact-info">
+              <h1>Address</h1>
+              <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="footer">
+      <div class="footer container">
         <div class="brand">
-          <a href="#hero">
-            <h1><span>L</span>arry <span>W</span>right</h1>
-          </a>
-        </div>
-        <div class="nav-list">
-          <div class="hamburger">
-            <div class="bar"></div>
-          </div>
-          <ul>
-            <li><a href="#hero" data-after="Home">Home</a></li>
-            <li><a href="#resume" data-after="Resume">Resume</a></li>
-            <li><a href="#projects" data-after="Projects">Projects</a></li>
-            <li><a href="#about" data-after="About">About</a></li>
-            <li><a href="#contact" data-after="Contact">Contact</a></li>
-          </ul>
+          <h1><span>L</span>arry <span>W</span>right</h1>
         </div>
       </div>
-    </div>
-  </section>
-
-
-  <section id="hero">
-    <div class="hero container">
-      <div>
-        <h1>Welcome, <span></span></h1>
-        <h1>My Name is <span></span></h1>
-        <h1>Larry Wright <span></span></h1>
-        <a href="#projects" type="button" class="cta">Portfolio</a>
-      </div>
-    </div>
-  </section>
-  
-
-  <section id="resume">
-    <div class="resume container">
-      <div class="resume-top">
-        <h1 class="section-title">Res<span>u</span>me</h1>
-        <p>Resume area that includes pdf resume and work experience</p>
-      </div>
-      <div class="resume-bottom">
-        <div class="resume-item">
-          <div class="icon"><img src="data:image/png;base64,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" /></div>
-          <h2>Developer Resume</h2>
-          <p>Contains embedded pdf of Resume.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-
-  <section id="projects">
-    <div class="projects container">
-      <div class="projects-header">
-        <h1 class="section-title">Recent <span>Projects</span></h1>
-      </div>
-      <div class="all-projects">
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Memory Game</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde
-              rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt
-              harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
-          </div>
-          <div class="project-img">
-            <img src="images/memorygm.png" alt="img">
-          </div>
-        </div>
-  </section>
- 
- 
-  <section id="about">
-    <div class="about container">
-      <div class="col-left">
-        <div class="about-img">
-          <img src="/images/meimg.png" alt="img">
-        </div>
-      </div>
-      <div class="col-right">
-        <h1 class="section-title">About <span>me</span></h1>
-        <h2>Software Developer Apprentice</h2>
-        <p>My journey in software development begin with a fullstack bootcamp at PDX Code Guild. 
-          The camp consisted of languages: Javascript, Python, CSS, and html. The libraries and 
-          frameworks consited of: django, CSS libraries(bootstrap), and tools used were visual studio and github.
-        </p>
-        <a href="#" class="cta">Download Resume</a>
-      </div>
-    </div>
-  </section>
-
-  
-  <section id="contact">
-    <div class="contact container">
-      <div>
-        <h1 class="section-title">Contact <span>info</span></h1>
-      </div>
-      <div class="contact-items">
-        <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" /></div>
-          <div class="contact-info">
-            <h1>Phone</h1>
-            <h2>+1 318 218 2362</h2>
-          </div>
-        </div>
-        <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
-          <div class="contact-info">
-            <h1>Email</h1>
-            <h2>Personal: ldb2g3@me.com</h2>
-            <h2>Work: wrijlarr@amazon.com</h2>
-          </div>
-        </div>
-        <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" /></div>
-          <div class="contact-info">
-            <h1>Address</h1>
-            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  
-  <section id="footer">
-    <div class="footer container">
-      <div class="brand">
-        <h1><span>L</span>arry <span>W</span>right</h1>
-      </div>
-</body>
+    </section>
+  </body>
 </html>
